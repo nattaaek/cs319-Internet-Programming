@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+        <form action="" method="POST" role="form">
+            <legend>Personal Information</legend>
+            <div class="form-group">
+                <label class="col-lg-12" for="">ชื่อ</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label  class="col-lg-12"for="">นามสกุล</label>
+                <input type="text" class="form-control" id="lname">
+            </div>
+            <div class="form-group">
+                <label class="col-lg-12" for="">วันเดือนปีเกิด</label>
+                <input type="date" class="form-control" id="birthdate" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="form-group">     
+                <label class="col-lg-12" for="">เพศ</label>
+                <label class="custom-control custom-radio">
+                <input id="radio1" name="genderS" value="2" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Male</span>
+                </label>
+                <label class="custom-control custom-radio">
+                <input id="radio2" name="genderS" value="1" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Female</span>
+                </label>
+                <label class="custom-control custom-radio">
+                <input id="radio3" name="genderS" value="0" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Other</span>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label class="col-lg-12" for="">Education</label>
+                <div class="dropdown col-lg-12">
+                <button class="btn dropdown-toggle btn-primary" type="button" data-toggle="dropdown">Please choose your Education
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">ปริญญาตรี</a></li>
+                    <li><a href="#">ปริญญาโท</a></li>
+                    <li><a href="#">ปริญญาเอก</a></li>
+                </ul>
+                </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-12" for="">Phone:</label>
+                    <div class="col-lg-9">
+                        <div class="form-inline">
+                        <div class="form-group ">
+                            <div class="col-lg-12">
+                            <label class="sr-only" for="city"></label> 
+                            <input type="text" id="firstphone" name="firstphone" class="form-control " placeholder="+88" maxlength="3">
+                            </div>
+                        </div> 
+                        <div class="form-group ">
+                            <div class="col-lg-12">
+                            <label class="sr-only" for="county"></label> 
+                            <input type="text" id="lastphone" name="lastphone" class="form-control" maxlength="7">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="form-group">
+                    <label class="col-lg-12" for="">Hobby</label>
+                        <div class="dropdown col-lg-12">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Please choose your hobby
+                        <span class="caret"></span></button>
+                        <ul id="hobby" class="dropdown-menu">
+                            <li><a href="#">travel</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                        </div>
+                </div>
+        <div class="col-lg-12">
+            <hr/>
+            <center><button type="button" onclick="Display();" class="btn btn-primary">Register Now</button></center>
+        </div>
+        </form>    
+        <div class="col-lg-12">
+            <h1 id="head"></h1>
+            <p id="showname"></p>
+            <p id="showlname"></p>
+            <p id="showhobby"></p>
+        </div>       
+        
+        </div>
+
+        
+        <script src="./script.js"></script>
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       
+
+    </body>
+</html>
