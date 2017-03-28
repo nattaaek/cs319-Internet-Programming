@@ -1,11 +1,12 @@
 function display() {
     var name = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
-    var birthdate = document.getElementById("birthdate").value;
     var fphone = document.getElementById("fphone").value;
     var lphone = document.getElementById("lphone").value;
     var weight = document.getElementById("weight").value;
     var height = document.getElementById("height").value;
+    var mydate = new Date(document.getElementById("birthdate").value);
+    var str = mydate.toString("dd MMMM yyyy");
     var gender , bmi , synopsis;
     if(document.getElementById("gender1").checked)
     {
@@ -52,7 +53,7 @@ function display() {
     else{
         document.getElementById("showHeader").innerHTML = "Display personal's data"
         document.getElementById("showName").innerHTML = "Your name: " + name + " " + lname;
-        document.getElementById("showBirthdate").innerHTML = "Birthdate: " + birthdate;
+        document.getElementById("showBirthdate").innerHTML = "Birthdate: " + str;
         document.getElementById("showHobby").innerHTML = "Hobby: " + strUser;
         document.getElementById("showGender").innerHTML = "Gender: "  + gender;
         document.getElementById("showBMIHeader").innerHTML = "Display your body mass index";
