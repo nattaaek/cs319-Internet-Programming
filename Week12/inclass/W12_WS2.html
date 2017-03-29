@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="action_w12.php" method="POST" role="form">
+            <h1 class="text-center">PHP Form Validation</h1>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2 ">
+                        <label for="">Name:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Input your name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2 ">
+                        <label for="">Email:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Input your email">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2 ">
+                        <label for="">Weight:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="weight" id="weight" placeholder="Input your weight">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2 ">
+                        <label for="">Height:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="height" id="height" placeholder="Input your height">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2 ">
+                        <label for="">Gender:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="MyRadio" value="First" checked>Male     
+                            </label>
+                            <label>
+                                <input type="radio" name="MyRadio" value="Second">Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row text-center">
+                <button type="submit" value="Result" name="Result" class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
