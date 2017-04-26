@@ -63,38 +63,26 @@ VALUES ($id, '$name', '$email', '$department')";
 
         <div class="container">
         
-        
-        <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
              <p>รหัสนักศึกษา: <?php echo $id;?></p>
         </div>
-        </div>
-
-        <div class="row">
-                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+       
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                 <p>รวมทั้งหมด <?php echo $four; ?> หน่วยกิต </p>
             </div>
             
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                 <p>จำนวนเงินที่ต้องชำระค่าหน่วยกิต: <?php echo $total; ?> บาท</p>
             </div>
       
         </div>
-        </div>
         
-       
         
-        <div class="row">
-                 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p>ข้อมูลของคุณ <?php echo $name; ?> ได้ถูกบันทึกลงในฐานข้อมูลเรียบร้อยแล้ว</p>
         </div>
-        </div>
-        
-        
-   
         
         
            
